@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Our Memories</title>
+    <style>
+        body{
+            margin:0;
+            font-family:Arial;
+            text-align:center;
+            background: linear-gradient(45deg,#ff4e50,#ff9a9e);
+            color:white;
+        }
+
+        img{
+            width:260px;
+            height:340px;
+            object-fit:cover;
+            margin-top:20px;
+            border-radius:15px;
+            box-shadow:0 0 10px black;
+        }
+
+        button{
+            margin-top:20px;
+            padding:12px 25px;
+            border:none;
+            border-radius:10px;
+            font-size:16px;
+            cursor:pointer;
+            background:white;
+            color:#ff4e50;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Our Beautiful Memories ❤️</h1>
+
+<img id="slide" src="photo1.jpg">
+
+<br>
+
+<button onclick="proposal()">Click For Surprise 💍</button>
+
+<audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    var images = ["photo1.jpg","photo2.jpg","photo3.jpg"];
+    var i = 0;
+
+    setInterval(function(){
+        i++;
+        if(i >= images.length){
+            i = 0;
+        }
+        document.getElementById("slide").src = images[i];
+    },2000);
+
+    function proposal(){
+        alert("I love you Bhawana!");
+    }
+</script><br>
+<h1>Thankyou for being my valentine</h1>
+</body>
+</html>
